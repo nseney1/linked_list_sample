@@ -1,2 +1,2 @@
 # linked_list_sample
-A sample linked list written in C++ using TDD
+A sample linked list written in C++
