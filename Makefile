@@ -5,7 +5,7 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++14
 
 # Define the final executable name
-EXEC = program
+EXEC = LinkedList.exe 
 
 # List of source files
 SOURCES = main.cpp Node/Node.cpp LinkedList/LinkedList.cpp
