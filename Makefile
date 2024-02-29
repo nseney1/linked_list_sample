@@ -2,7 +2,7 @@
 CXX = g++
 
 # Compiler flags
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Wall -std=c++14
 
 # Define the final executable name
 EXEC = program
@@ -17,15 +17,15 @@ OBJECTS = $(SOURCES:.cpp=.o)
 all: $(EXEC)
 
 $(EXEC): $(OBJECTS)
-    $(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
 # Rule for building object files
 %.o: %.cpp
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Clean target: remove object files and the executable
 clean:
-    rm -f $(OBJECTS) $(EXEC)
+	rm -f $(OBJECTS) $(EXEC)
 
 # Phony targets
 .PHONY: all clean

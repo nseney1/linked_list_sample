@@ -7,7 +7,7 @@ int main() {
 	LinkedList* linked_list = new LinkedList();
 	std::cout << "Let's create a linked list" << std::endl;
 
-	for (int i=0; i<5; ++i) {
+	for (int i=0; i<5; i++) {
 		int value;
 		
 		std::cout << "Enter a number: ";
