@@ -9,16 +9,18 @@ class LinkedList {
 	public:
 		Node* head;
 
+		LinkedList();
 		LinkedList(Node* start);
 
 		void sort_list();
 		void insert(int value);
-		void free_memory(Node* node);
+		void free_memory();
+		void display_list();
 
-		int remove(int value);
+		void remove(int value);
 		int get_size();		
 		
-		Node* find(int value, Node* node);
+		Node* find(int value);
 		Node* update(Node* node, int value);
 		Node* get_head();
 		Node* get_tail();
